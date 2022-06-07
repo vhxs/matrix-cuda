@@ -1,8 +1,8 @@
 ## Notes
 
 - GPU: NVIDIA GeForce GTX 1660 Ti
-- `nvcc matrix_cuda.cu` to compile
-- haven't yet figured out how to build `mm_omp_vs_cuda.cu`
+- `nvcc matrix_cuda.cu`
+- `nvcc -Xcompiler -fopenmp mm_omp_vs_cuda.cu` (requires linking to OpenMP I'd guess?)
 
 
 ```
